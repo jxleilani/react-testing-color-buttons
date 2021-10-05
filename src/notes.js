@@ -13,6 +13,8 @@ test('renders learn react link', () => {
   expect(linkElement).toBeInTheDocument(); 
 });
 
+// https://github.com/bonnie/udemy-TESTING-LIBRARY/tree/main/code-quiz
+
 /* Other Examples of Assertions with jest */
 // expect(element.textContent).toBe('hello')
 // expect(elementsArray).toHaveLength(7)

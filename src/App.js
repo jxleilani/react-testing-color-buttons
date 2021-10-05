@@ -14,6 +14,7 @@ function App() {
       >
         Click to turn {newButtonColor}
       </button>
+      <input type="checkbox" />
     </div>
   );
 }
