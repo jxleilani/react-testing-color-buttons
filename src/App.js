@@ -2,6 +2,11 @@ import { useState } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 
+export function replaceCamelWithSpaces(color) {
+  return color.replace(/\B([A-Z])\B/g, ' $1')
+  // capital letter in the middle of a word, replace it with itself and a space infront
+}
+
 function App() {
   const [buttonColor, setButtonColor] = useState("red");
   const [disabled, setDisabled] = useState(false);
