@@ -49,3 +49,25 @@ test('renders learn react link', () => {
 // https://www.w3.org/TR/wai-aria/#role_definitions 
 // getByText  - for non interactive
 // getByRole  - for interactive, like a link
+
+/* SCREEN QUERY METHODS */
+// get: expect element to be in DOM
+// query: expect element NOT to be in DOM
+// find: expect element to appear async
+
+// [All]
+// exclude if you expect only one match
+// include if you expect more than one match
+
+// Role
+// AltText (images)
+// Text (display elements)
+// Forms:
+// PlaceholderText, LabelText, DisplayValue
+
+/* WARNINGS */
+// not wrapped in act(...)
+// could mean element in DOM was updated after the test was finished
+// so async function occurred after the test finished
+// fix: determind how component is getting updated async and account for in test
+// ex: waitForElementToBeRemoved()
